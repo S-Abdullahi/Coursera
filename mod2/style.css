@@ -1,0 +1,116 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+  .clear {
+      clear: both;
+  }
+  
+  /******************************************
+  /* BASE STYLES
+  /*******************************************/
+  
+  body {
+    font-size: 100%;
+  }
+  
+  
+  /***************HEADER**************** */
+
+  h1{
+      text-align: center;
+      font-family: 'Architects Daughter', cursive;
+  }
+
+  /************MAIN SECTION*************/
+
+  section{
+      margin: auto;
+  }
+
+  .outerDiv{
+      position: relative;
+      width: 31%;
+      height: auto;
+      margin: 1%;
+      float: left;
+      border: solid black 2px;
+      padding: 0 10px;
+      background: rgba(102, 167, 4, 0.61);
+  }
+
+  .innerDiv{
+      border: solid black 2px;
+      position: absolute;
+      top: -2px;
+      right: -2px;
+      width: 40%;
+      text-align: center;
+      background: lightcyan;
+      font-family: 'Architects Daughter', cursive;
+      font-size: 1.2rem;
+      font-weight: bold;
+  }
+  
+  p{
+      padding-top: 30px;
+  }
+
+  .outerDiv:nth-child(2) .innerDiv{
+      background: lightpink;
+  }
+
+  .outerDiv:nth-child(3) .innerDiv{
+      background: lightsalmon;
+  }
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+  
+  /***************MEDIA QUERIES*********/
+  @media (min-width: 768px) and (max-width:991px){
+
+    section{
+        width: 95%;
+        margin: auto;
+    }
+      .outerDiv:nth-child(3){
+          width: 100%;
+         margin: 20px auto;
+      }
+
+      .outerDiv:nth-child(1){
+          width: 48%;
+          float: left;
+          margin-left: 0;
+      }
+
+      .outerDiv:nth-child(2){
+          width: 48%;
+          float: right;
+          margin-right: 0;
+      }
+  }
+
+  @media screen and (max-width:767px){
+
+    section{
+        width: 90%;
+        margin: auto;
+    }
+      .outerDiv{
+          width: 100%;
+          margin-top: 20px;
+      }
+  }
