@@ -49,6 +49,8 @@
       border: solid black 2px;
       padding: 0 10px;
       background: rgba(102, 167, 4, 0.61);
+      box-shadow: 0 4px 8px 0 rgba(128, 128, 128, 0.712);
+      
   }
 
   .innerDiv{
@@ -175,6 +177,17 @@ ul button a:hover{
     color: white;
 }
 
+/*********FOOTER***********/
+footer, header{
+    text-align: center;
+}
+
+i{
+    margin: 5px;
+    font-size: 1.2rem;
+    color: rgba(128, 128, 128, 0.507);
+}
+
   /***************MEDIA QUERIES*********/
   @media (min-width: 768px) and (max-width:991px){
 
@@ -210,4 +223,8 @@ ul button a:hover{
           width: 100%;
           margin-top: 20px;
       }
+
+    ul{
+        width: 70%;
+    }
   }
