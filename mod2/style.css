@@ -226,5 +226,8 @@ i{
 
     ul{
         width: 70%;
+        display: block;
+        padding-left: 0;
     }
+
   }
