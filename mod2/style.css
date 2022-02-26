@@ -23,6 +23,7 @@
   
   body {
     font-size: 100%;
+    background-color: rgba(22, 235, 58, 0.144);
   }
   
   
@@ -86,7 +87,7 @@
       width: 20%;
       height: 30px;
       border-radius: 20px;
-      border: solid black 1px;
+      border: solid black 0.5px;
       background-color: lightsalmon;
   }
 
@@ -104,7 +105,7 @@
   }
 
   /***********TEXT********/
-  p, .btn {
+  p, .btn, a {
     font-family: 'Poppins', sans-serif
   }
 
@@ -112,11 +113,67 @@
       text-align: justify;
       font-size: 0.9rem;
   }
+
+  a{
+      text-decoration: none;
+      color: black;
+  }
+
+  li a{
+      color: white;
+  }
+
+  ul button a {
+      color: green;
+  }
   /******************************************
   /* ADDITIONAL STYLES
   /*******************************************/
+  /* ***********LIST******* */
+  
 
+  ul{
+      width: 20%;
+      margin: 20px auto;
+  }
 
+  li, ul button{
+    list-style-type: none;
+    height: 40px;
+    width: 100%;
+    border-radius: 20px;
+    border: 0;
+    background: green;
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul button{
+    background-color: white;
+    border: solid green 1px;
+    margin-top: 60px;
+}
+
+/*******HOVER**** */
+li:hover{
+    background-color: white;
+}
+
+a:hover{
+    color: green;
+}
+
+ul button:hover{
+    background-color: green;
+    border: solid white;
+}
+
+ul button a:hover{
+    color: white;
+}
 
   /***************MEDIA QUERIES*********/
   @media (min-width: 768px) and (max-width:991px){
