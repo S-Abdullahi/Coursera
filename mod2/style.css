@@ -74,6 +74,44 @@
   .outerDiv:nth-child(3) .innerDiv{
       background: lightsalmon;
   }
+
+
+  /********BUTTON******* */
+  .btnDiv{
+      text-align: center;
+      margin: 10px auto;
+  }
+
+  .btn{
+      width: 20%;
+      height: 30px;
+      border-radius: 20px;
+      border: solid black 1px;
+      background-color: lightsalmon;
+  }
+
+  .outerDiv:nth-child(1) .btn{
+      background-color: lightcyan;
+  }
+
+  .outerDiv:nth-child(2) .btn{
+      background-color: lightpink;
+  }
+
+  .btn:hover{
+      background-color: lightgreen;
+      cursor: pointer;
+  }
+
+  /***********TEXT********/
+  p, .btn {
+    font-family: 'Poppins', sans-serif
+  }
+
+  P{
+      text-align: justify;
+      font-size: 0.9rem;
+  }
   /******************************************
   /* ADDITIONAL STYLES
   /*******************************************/
