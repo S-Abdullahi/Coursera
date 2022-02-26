@@ -5,11 +5,11 @@ document.querySelector('#berbecue').addEventListener('click', berbecue)
 
 
 function chicken(){
-    document.querySelector('body').style.backgroundColor = 'red'
+    document.querySelector('body').style.backgroundColor = 'lightcyan'
 }
 
 function shawarma(){
-    document.querySelector('body').style.backgroundColor = 'green'
+    document.querySelector('body').style.backgroundColor = 'lightpink'
 }
 
 function berbecue(){
